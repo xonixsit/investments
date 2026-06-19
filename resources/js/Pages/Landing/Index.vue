@@ -234,43 +234,43 @@
       </section>
 
       <!-- Footer -->
-      <footer class="w-full pt-20 pb-10 bg-primary border-t border-outline">
-        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter text-on-primary">
-          <div class="col-span-1 md:col-span-1">
-            <div class="flex items-center gap-3 mb-6">
-              <img :src="logoUrl" alt="ETax Investments Dubai" class="h-10 w-auto" />
-            </div>
-            <p class="font-body-md opacity-70 mb-8 max-w-xs">Connecting international wealth to Dubai's most resilient real estate opportunities.</p>
+      <!-- Footer -->
+    <footer class="w-full pt-20 pb-10 bg-primary border-t border-outline">
+      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter text-on-primary">
+        <div class="col-span-1">
+          <div class="flex items-center gap-3 mb-6">
+            <img :src="logoUrl" style="height:44px;width:auto;display:block;object-fit:contain;filter:brightness(0) invert(1);" alt="ETax Investments Dubai" class="h-10 w-auto" />
           </div>
-          <div>
-            <h4 class="font-label-md text-label-md mb-6 uppercase tracking-widest text-secondary-fixed">Catalog</h4>
-            <ul class="space-y-4">
-              <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="#">Investment Catalog</a></li>
-              <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="#">Investor Guide</a></li>
-              <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="#">Off-Plan Properties</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="font-label-md text-label-md mb-6 uppercase tracking-widest text-secondary-fixed">Support</h4>
-            <ul class="space-y-4">
-              <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="#">FAQs</a></li>
-              <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="#">Privacy Policy</a></li>
-              <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="#">Terms of Service</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="font-label-md text-label-md mb-6 uppercase tracking-widest text-secondary-fixed">Newsletter</h4>
-            <p class="font-caption text-caption mb-4 opacity-60">Get weekly Dubai market insights.</p>
-            <div class="flex gap-2">
-              <input class="bg-primary-container border-none text-white font-caption px-4 py-2 w-full" placeholder="Email" type="text"/>
-              <button class="bg-secondary text-on-secondary px-4 py-2"><span class="material-symbols-outlined" data-icon="send">send</span></button>
-            </div>
+          <p class="font-body-md opacity-70 max-w-xs">Invest in Dubai Properties with Direct Developer Pricing – No Buyer Brokerage.</p>
+        </div>
+        <div>
+          <h4 class="font-label-md uppercase tracking-widest mb-6 text-secondary-fixed">Quick Links</h4>
+          <ul class="space-y-4">
+            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="/investments">Investment Catalog</a></li>
+            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="/guide">Investor Guide</a></li>
+            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="/faqs">FAQs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-label-md uppercase tracking-widest mb-6 text-secondary-fixed">Legal</h4>
+          <ul class="space-y-4">
+            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="#">Privacy Policy</a></li>
+            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-label-md uppercase tracking-widest mb-6 text-secondary-fixed">Newsletter</h4>
+          <p class="font-caption opacity-60 mb-4">Stay updated with premium Dubai property launches.</p>
+          <div class="flex gap-2">
+            <input class="bg-primary-container border-none text-white font-caption px-4 py-2 w-full" placeholder="Email" type="email" />
+            <button class="bg-secondary text-on-secondary px-4 py-2 font-label-md">Join</button>
           </div>
         </div>
-        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-20 pt-8 border-t border-white/10 text-center">
-          <p class="font-body-md text-body-md text-outline-variant">© 2024 ETAXPLANNER PROPERTY CONNECT. All rights reserved. Registered with RERA.</p>
-        </div>
-      </footer>
+      </div>
+      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-16 pt-8 border-t border-white/10 text-center">
+        <p class="font-body-md text-outline-variant">© 2024 ETAXPLANNER PROPERTY CONNECT. All rights reserved. Registered with RERA.</p>
+      </div>
+    </footer>
     </main>
   </div>
 </template>

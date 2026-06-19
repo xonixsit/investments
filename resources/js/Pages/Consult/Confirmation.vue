@@ -59,15 +59,41 @@
     </main>
 
     <!-- Minimal footer -->
-    <footer class="bg-primary py-8">
-      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-4">
-        <img :src="logoUrl" alt="ETax" class="h-8 w-auto" />
-        <div class="flex gap-6">
-          <Link href="/investments" class="font-label-md text-outline-variant hover:text-secondary-fixed transition-colors" style="font-size:12px;">Investment Guides</Link>
-          <a href="#" class="font-label-md text-outline-variant hover:text-secondary-fixed transition-colors" style="font-size:12px;">Privacy Policy</a>
-          <a href="#" class="font-label-md text-outline-variant hover:text-secondary-fixed transition-colors" style="font-size:12px;">Terms of Service</a>
+    <!-- Footer -->
+    <footer class="w-full pt-20 pb-10 bg-primary border-t border-outline">
+      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter text-on-primary">
+        <div class="col-span-1">
+          <div class="flex items-center gap-3 mb-6">
+            <img :src="logoUrl" style="height:44px;width:auto;display:block;object-fit:contain;filter:brightness(0) invert(1);" alt="ETax Investments Dubai" class="h-10 w-auto" />
+          </div>
+          <p class="font-body-md opacity-70 max-w-xs">Invest in Dubai Properties with Direct Developer Pricing – No Buyer Brokerage.</p>
         </div>
-        <p class="font-body-md text-outline-variant" style="font-size:12px;">© 2024 Ghaf Real Estate Investment. Regulated by RERA.</p>
+        <div>
+          <h4 class="font-label-md uppercase tracking-widest mb-6 text-secondary-fixed">Quick Links</h4>
+          <ul class="space-y-4">
+            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="/investments">Investment Catalog</a></li>
+            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="/guide">Investor Guide</a></li>
+            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="/faqs">FAQs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-label-md uppercase tracking-widest mb-6 text-secondary-fixed">Legal</h4>
+          <ul class="space-y-4">
+            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="#">Privacy Policy</a></li>
+            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-label-md uppercase tracking-widest mb-6 text-secondary-fixed">Newsletter</h4>
+          <p class="font-caption opacity-60 mb-4">Stay updated with premium Dubai property launches.</p>
+          <div class="flex gap-2">
+            <input class="bg-primary-container border-none text-white font-caption px-4 py-2 w-full" placeholder="Email" type="email" />
+            <button class="bg-secondary text-on-secondary px-4 py-2 font-label-md">Join</button>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-16 pt-8 border-t border-white/10 text-center">
+        <p class="font-body-md text-outline-variant">© 2024 ETAXPLANNER PROPERTY CONNECT. All rights reserved. Registered with RERA.</p>
       </div>
     </footer>
 

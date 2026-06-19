@@ -268,20 +268,21 @@
     </main>
 
     <!-- Footer -->
+   <!-- Footer -->
     <footer class="w-full pt-20 pb-10 bg-primary border-t border-outline">
       <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter text-on-primary">
         <div class="col-span-1">
           <div class="flex items-center gap-3 mb-6">
-            <img :src="logoUrl" alt="ETax Investments Dubai" class="h-10 w-auto" />
+            <img :src="logoUrl" style="height:44px;width:auto;display:block;object-fit:contain;filter:brightness(0) invert(1);" alt="ETax Investments Dubai" class="h-10 w-auto" />
           </div>
-          <p class="font-body-md opacity-70 max-w-xs">Elevating Dubai real estate investments through financial precision and heritage-inspired service.</p>
+          <p class="font-body-md opacity-70 max-w-xs">Invest in Dubai Properties with Direct Developer Pricing – No Buyer Brokerage.</p>
         </div>
         <div>
           <h4 class="font-label-md uppercase tracking-widest mb-6 text-secondary-fixed">Quick Links</h4>
           <ul class="space-y-4">
-            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="#">Investment Catalog</a></li>
-            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="#">Investor Guide</a></li>
-            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="#">FAQs</a></li>
+            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="/investments">Investment Catalog</a></li>
+            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="/guide">Investor Guide</a></li>
+            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="/faqs">FAQs</a></li>
           </ul>
         </div>
         <div>
