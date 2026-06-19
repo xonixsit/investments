@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Investor Process &amp; FAQ | ETAXPLANNER PROPERTY CONNECT</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline": "#74777d",
+                    "outline-variant": "#c4c6cd",
+                    "on-tertiary-container": "#829685",
+                    "inverse-primary": "#b7c8de",
+                    "secondary-fixed": "#ffdea5",
+                    "on-background": "#1b1c19",
+                    "on-error": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "on-surface": "#1b1c19",
+                    "tertiary": "#08190e",
+                    "on-tertiary": "#ffffff",
+                    "primary-container": "#1a2b3c",
+                    "on-secondary-fixed": "#261900",
+                    "surface-container": "#f0eee9",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-fixed-variant": "#394b3d",
+                    "tertiary-container": "#1c2e21",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-variant": "#e4e2dd",
+                    "tertiary-fixed-dim": "#b7ccb9",
+                    "tertiary-fixed": "#d3e8d5",
+                    "surface-bright": "#fbf9f4",
+                    "surface-dim": "#dbdad5",
+                    "secondary-container": "#fed488",
+                    "secondary": "#775a19",
+                    "on-primary-fixed-variant": "#38485a",
+                    "surface-container-low": "#f5f3ee",
+                    "on-primary-fixed": "#0b1d2d",
+                    "on-tertiary-fixed": "#0e1f13",
+                    "on-primary-container": "#8192a7",
+                    "primary-fixed-dim": "#b7c8de",
+                    "surface-tint": "#4f6073",
+                    "inverse-on-surface": "#f2f1ec",
+                    "on-primary": "#ffffff",
+                    "surface": "#fbf9f4",
+                    "primary-fixed": "#d2e4fb",
+                    "background": "#fbf9f4",
+                    "inverse-surface": "#30312e",
+                    "secondary-fixed-dim": "#e9c176",
+                    "error": "#ba1a1a",
+                    "on-surface-variant": "#44474c",
+                    "on-secondary-container": "#785a1a",
+                    "surface-container-high": "#eae8e3",
+                    "surface-container-highest": "#e4e2dd",
+                    "primary": "#041627",
+                    "error-container": "#ffdad6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "margin-mobile": "16px",
+                    "margin-desktop": "48px",
+                    "container-max": "1280px",
+                    "unit": "8px"
+            },
+            "fontFamily": {
+                    "caption": ["Inter"],
+                    "headline-md": ["Montserrat"],
+                    "headline-lg": ["Montserrat"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-xl": ["Montserrat"],
+                    "headline-lg-mobile": ["Montserrat"],
+                    "label-md": ["Inter"]
+            },
+            "fontSize": {
+                    "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .ghaf-pattern {
+            background-image: radial-gradient(circle at 2px 2px, #E5E1D8 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+        .step-line::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 40px;
+            bottom: -20px;
+            width: 1px;
+            background-color: #C5A059;
+            opacity: 0.3;
+        }
+        .step-line:last-child::before {
+            display: none;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .accordion-open .accordion-content {
+            max-height: 500px;
+        }
+        .accordion-open .rotate-icon {
+            transform: rotate(180px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar -->
+<header class="w-full top-0 sticky bg-surface dark:bg-primary z-50 border-b border-outline-variant dark:border-outline">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex items-center justify-between h-20">
+<div class="flex items-center gap-4 cursor-pointer active:opacity-80">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed text-2xl">account_tree</span>
+<h1 class="font-headline-md text-headline-md text-primary dark:text-primary-fixed tracking-tight">ETAXPLANNER PROPERTY CONNECT</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant dark:text-outline-variant font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300" href="#">Investment Catalog</a>
+<a class="text-primary dark:text-secondary-fixed font-bold border-b-2 border-secondary" href="#">Guide</a>
+<a class="text-on-surface-variant dark:text-outline-variant font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300" href="#">Portfolio</a>
+</nav>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded font-label-md hover:bg-secondary transition-colors duration-300 cursor-pointer active:opacity-80">
+                Book Consultation
+            </button>
+</div>
+</header>
+<main class="min-h-screen">
+<!-- Hero Section -->
+<section class="relative py-20 overflow-hidden" style="background-image: linear-gradient(rgba(4, 22, 39, 0.75), rgba(4, 22, 39, 0.75)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuArUSld52hqn9bKWWifLHSYdbORXN2dViIOwvxaXTUtQpK4vTJFPmzFlMqsx06Y-mMljn4L0MPkHykRrg6aDMTfH2QBLOVPOZ0VU678QdtJBTqeKMoy3_gud1MMSil0LmQ_9jB4IFCffzh85KNSkvvFPFHCwxh3uBqigxqeTvbwzhkxg2JbHnxgWvMz_wXJxYof3phQZlN-oUCpIQ1fzExWli5NBarQc0_9ifd8YvBNgF_hHSYFDsGHMAAoDHmgbb1BN8_Zbc4q5f2y'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 ghaf-pattern opacity-40"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="max-w-3xl">
+<span class="text-secondary font-label-md tracking-widest uppercase mb-4 block">Our Methodology</span>
+<h2 class="font-headline-xl text-headline-xl mb-6 text-white">Your Journey to <span class="text-secondary">Generational Wealth</span></h2>
+<p class="font-body-lg text-body-lg leading-relaxed text-white">
+                        Navigating the Dubai property market requires a blend of local expertise and financial precision. Our 6-step investor process is designed to provide transparency, security, and exponential growth.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Process Timeline Section -->
+<section class="py-24 bg-surface">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Left: Illustration/Context -->
+<div class="lg:col-span-4 hidden lg:block">
+<div class="sticky top-32">
+<div class="relative rounded-xl overflow-hidden shadow-lg aspect-[3/4]">
+<img class="w-full h-full object-cover" data-alt="A professional architectural photograph of a luxury Dubai skyscraper against a golden sunset, with sharp focus on the glass facade and clean geometric lines, conveying stability and premium real estate investment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgWLaf-GHWBwaMUGdIMGbIRM5Mm8A3UNf9rMFMkbaR-m_lGrewsl5W5n-HobNO_bsdUIL8xXp-r0hFouuvNtO-pd_PdXzbXB92jW1x3MYirJSvwiKy22uCko3SeDNMdc9tnka_2CJ_5H6osnMtfHMZbnCoaLPVGnBAG3mpl-5sw9yTp11t6dL8O8X3VL0ZUqGIzbffKjNsV12e-lhKVYnoGNTCcq6xdnPeLS5wPmsiJco53vAyPGL1_iIQLa-vNZnL1S-wNsYHmA4Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8 text-on-primary">
+<h3 class="font-headline-md text-headline-md mb-2">Deep Roots</h3>
+<p class="font-body-md opacity-90">Every investment is anchored in rigorous market analysis and historical data stability.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Vertical Timeline -->
+<div class="lg:col-span-8">
+<div class="space-y-12">
+<!-- Step 1 -->
+<div class="relative step-line flex gap-8 group">
+<div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-secondary-fixed font-bold z-10 ring-4 ring-surface">1</div>
+<div class="pb-8">
+<h4 class="font-headline-md text-headline-md text-primary mb-3">Submit Interest</h4>
+<p class="font-body-md text-on-surface-variant">Your journey begins by sharing your investment criteria. Our advisors analyze your profile against the current Dubai market landscape to identify high-yield opportunities.</p>
+<div class="mt-4 flex gap-4">
+<span class="flex items-center gap-2 text-caption text-secondary font-semibold"><span class="material-symbols-outlined text-sm">check_circle</span> 1-on-1 Discovery Call</span>
+<span class="flex items-center gap-2 text-caption text-secondary font-semibold"><span class="material-symbols-outlined text-sm">check_circle</span> Portfolio Assessment</span>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative step-line flex gap-8 group">
+<div class="flex-shrink-0 w-10 h-10 rounded-full bg-white border-2 border-outline-variant flex items-center justify-center text-primary font-bold z-10 group-hover:border-secondary transition-colors">2</div>
+<div class="pb-8">
+<h4 class="font-headline-md text-headline-md text-primary mb-3">Strategic Selection</h4>
+<p class="font-body-md text-on-surface-variant">We present a curated shortlist of properties featuring the 'Investment Tree' ROI projections. Each selection is vetted for developer credibility and location growth potential.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative step-line flex gap-8 group">
+<div class="flex-shrink-0 w-10 h-10 rounded-full bg-white border-2 border-outline-variant flex items-center justify-center text-primary font-bold z-10 group-hover:border-secondary transition-colors">3</div>
+<div class="pb-8">
+<h4 class="font-headline-md text-headline-md text-primary mb-3">Compliance &amp; Verification</h4>
+<p class="font-body-md text-on-surface-variant">Full transparency via RERA registration checks and legal documentation. We ensure all regulatory requirements are met for both local and overseas investors.</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="relative step-line flex gap-8 group">
+<div class="flex-shrink-0 w-10 h-10 rounded-full bg-white border-2 border-outline-variant flex items-center justify-center text-primary font-bold z-10 group-hover:border-secondary transition-colors">4</div>
+<div class="pb-8">
+<h4 class="font-headline-md text-headline-md text-primary mb-3">Financial Structuring</h4>
+<p class="font-body-md text-on-surface-variant">Our tax planners optimize your investment structure. Whether it's through mortgage facilitation or tax-efficient holding strategies, we maximize your net gains.</p>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="relative step-line flex gap-8 group">
+<div class="flex-shrink-0 w-10 h-10 rounded-full bg-white border-2 border-outline-variant flex items-center justify-center text-primary font-bold z-10 group-hover:border-secondary transition-colors">5</div>
+<div class="pb-8">
+<h4 class="font-headline-md text-headline-md text-primary mb-3">Transaction Execution</h4>
+<p class="font-body-md text-on-surface-variant">Seamless handling of the Sales and Purchase Agreement (SPA). We manage the entire administrative trail, ensuring a stress-free transition from lead to owner.</p>
+</div>
+</div>
+<!-- Step 6 -->
+<div class="relative step-line flex gap-8 group">
+<div class="flex-shrink-0 w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-white font-bold z-10 shadow-lg">6</div>
+<div class="pb-8">
+<h4 class="font-headline-md text-headline-md text-primary mb-3">Property Reservation</h4>
+<p class="font-body-md text-on-surface-variant">The final seal. Your investment is secured with the developer. You receive your title deed or Oqood, marking the beginning of your portfolio growth journey.</p>
+<button class="mt-6 bg-primary text-on-primary px-8 py-3 rounded-sm font-label-md flex items-center gap-2 hover:bg-secondary transition-all">
+                                        Begin Step 1 <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-3xl mx-auto px-margin-mobile">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Common Inquiries</h2>
+<p class="font-body-md text-on-surface-variant">Clear answers for sophisticated investors looking to expand their Dubai footprint.</p>
+</div>
+<div class="space-y-4">
+<!-- FAQ 1 -->
+<div class="bg-white rounded-lg shadow-sm border border-outline-variant/30 transition-all overflow-hidden" onclick="toggleAccordion(this)">
+<div class="px-6 py-5 flex items-center justify-between cursor-pointer">
+<h5 class="font-headline-md text-body-lg text-primary font-semibold">Is there any brokerage fee?</h5>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 rotate-icon">expand_more</span>
+</div>
+<div class="accordion-content">
+<div class="px-6 pb-6 text-on-surface-variant border-t border-outline-variant/10 pt-4">
+<p class="font-body-md">For primary market (off-plan) properties directly from developers, our consultation and transaction management services are provided at zero brokerage cost to the investor. We are compensated by the development partners, ensuring you receive expert advice without overhead.</p>
+</div>
+</div>
+</div>
+<!-- FAQ 2 -->
+<div class="bg-white rounded-lg shadow-sm border border-outline-variant/30 transition-all overflow-hidden" onclick="toggleAccordion(this)">
+<div class="px-6 py-5 flex items-center justify-between cursor-pointer">
+<h5 class="font-headline-md text-body-lg text-primary font-semibold">Can overseas investors purchase?</h5>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 rotate-icon">expand_more</span>
+</div>
+<div class="accordion-content">
+<div class="px-6 pb-6 text-on-surface-variant border-t border-outline-variant/10 pt-4">
+<p class="font-body-md">Absolutely. Dubai is one of the most accessible markets for international capital. You can complete the entire reservation and transaction process remotely. We utilize digital signing and secure payment gateways to facilitate cross-border investments seamlessly.</p>
+</div>
+</div>
+</div>
+<!-- FAQ 3 -->
+<div class="bg-white rounded-lg shadow-sm border border-outline-variant/30 transition-all overflow-hidden" onclick="toggleAccordion(this)">
+<div class="px-6 py-5 flex items-center justify-between cursor-pointer">
+<h5 class="font-headline-md text-body-lg text-primary font-semibold">What are the typical ROI expectations?</h5>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 rotate-icon">expand_more</span>
+</div>
+<div class="accordion-content">
+<div class="px-6 pb-6 text-on-surface-variant border-t border-outline-variant/10 pt-4">
+<p class="font-body-md">Dubai consistently offers some of the world's highest rental yields, typically ranging from 6% to 9% net. Additionally, prime areas have seen capital appreciation of 15-20% annually in high-demand cycles. Our 'Investment Tree' reports provide specific projections for every listing.</p>
+</div>
+</div>
+</div>
+<!-- FAQ 4 -->
+<div class="bg-white rounded-lg shadow-sm border border-outline-variant/30 transition-all overflow-hidden" onclick="toggleAccordion(this)">
+<div class="px-6 py-5 flex items-center justify-between cursor-pointer">
+<h5 class="font-headline-md text-body-lg text-primary font-semibold">Is my investment protected by law?</h5>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 rotate-icon">expand_more</span>
+</div>
+<div class="accordion-content">
+<div class="px-6 pb-6 text-on-surface-variant border-t border-outline-variant/10 pt-4">
+<p class="font-body-md">Yes. All off-plan investments are protected by Escrow laws mandated by the Dubai Land Department (DLD). Payments are made into project-specific escrow accounts and released only as construction milestones are verified by RERA-approved auditors.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 p-8 bg-primary-container rounded-xl text-center">
+<h4 class="font-headline-md text-headline-md text-on-primary mb-3">Still have questions?</h4>
+<p class="text-on-primary-container font-body-md mb-6">Our senior advisors are available for a detailed walkthrough of the legal and financial frameworks.</p>
+<button class="bg-secondary text-white px-10 py-3 rounded-sm font-label-md hover:brightness-110 transition-all">
+                        Talk to an Expert
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-20 pb-10 bg-primary dark:bg-tertiary border-t border-outline dark:border-tertiary-container">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="col-span-1 md:col-span-1">
+<h3 class="font-headline-md text-headline-md text-secondary-fixed mb-6">ETAXPLANNER</h3>
+<p class="text-outline-variant font-body-md leading-relaxed">Pioneering wealth stability in Dubai's real estate ecosystem through financial intelligence and local roots.</p>
+</div>
+<div>
+<h4 class="text-on-primary font-bold mb-6">Explore</h4>
+<ul class="space-y-4">
+<li><a class="text-outline-variant hover:text-secondary-fixed-dim underline transition-all font-body-md" href="#">Investment Catalog</a></li>
+<li><a class="text-secondary-fixed font-semibold font-body-md" href="#">Investor Guide</a></li>
+<li><a class="text-outline-variant hover:text-secondary-fixed-dim underline transition-all font-body-md" href="#">FAQs</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-on-primary font-bold mb-6">Legal</h4>
+<ul class="space-y-4">
+<li><a class="text-outline-variant hover:text-secondary-fixed-dim underline transition-all font-body-md" href="#">Privacy Policy</a></li>
+<li><a class="text-outline-variant hover:text-secondary-fixed-dim underline transition-all font-body-md" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-on-primary font-bold mb-6">Contact</h4>
+<p class="text-outline-variant font-body-md">Business Bay, Dubai, UAE</p>
+<p class="text-outline-variant font-body-md">invest@etaxplanner.ae</p>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-16 pt-8 border-t border-outline-variant/10 text-center">
+<p class="text-outline-variant font-body-md opacity-60">© 2024 ETAXPLANNER PROPERTY CONNECT. All rights reserved. Registered with RERA.</p>
+</div>
+</footer>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-16 pb-safe bg-surface dark:bg-primary border-t border-outline-variant shadow-md block md:hidden">
+<button class="flex flex-col items-center justify-center text-outline dark:text-outline-variant cursor-pointer scale-95 transition-transform duration-150 active:bg-surface-container-high">
+<span class="material-symbols-outlined">search_insights</span>
+<span class="font-label-md text-label-md">Explore</span>
+</button>
+<button class="flex flex-col items-center justify-center text-secondary dark:text-secondary-fixed font-bold cursor-pointer scale-95 transition-transform duration-150 active:bg-surface-container-high">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+<span class="font-label-md text-label-md">Guide</span>
+</button>
+<button class="flex flex-col items-center justify-center text-outline dark:text-outline-variant cursor-pointer scale-95 transition-transform duration-150 active:bg-surface-container-high">
+<span class="material-symbols-outlined">account_balance</span>
+<span class="font-label-md text-label-md">Portfolio</span>
+</button>
+<button class="flex flex-col items-center justify-center text-outline dark:text-outline-variant cursor-pointer scale-95 transition-transform duration-150 active:bg-surface-container-high">
+<span class="material-symbols-outlined">calendar_month</span>
+<span class="font-label-md text-label-md">Consult</span>
+</button>
+</nav>
+<script>
+        function toggleAccordion(element) {
+            const isOpen = element.classList.contains('accordion-open');
+            
+            // Close all other accordions
+            document.querySelectorAll('.accordion-open').forEach(el => {
+                if(el !== element) el.classList.remove('accordion-open');
+            });
+
+            // Toggle current
+            if (isOpen) {
+                element.classList.remove('accordion-open');
+            } else {
+                element.classList.add('accordion-open');
+            }
+        }
+        
+        // Micro-interaction for timeline steps
+        const observerOptions = {
+            threshold: 0.2
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.step-line').forEach((el, index) => {
+            el.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
+            el.style.transitionDelay = `${index * 100}ms`;
+            observer.observe(el);
+        });
+    </script>
+</body></html>

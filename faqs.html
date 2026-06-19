@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FAQ | ETAXPLANNER PROPERTY CONNECT</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#0b1d2d",
+                    "tertiary-fixed-dim": "#b7ccb9",
+                    "on-surface": "#1b1c19",
+                    "inverse-on-surface": "#f2f1ec",
+                    "surface-variant": "#e4e2dd",
+                    "surface-container-high": "#eae8e3",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed": "#d3e8d5",
+                    "primary-fixed": "#d2e4fb",
+                    "error": "#ba1a1a",
+                    "secondary-fixed-dim": "#e9c176",
+                    "on-tertiary-fixed-variant": "#394b3d",
+                    "on-surface-variant": "#44474c",
+                    "outline": "#74777d",
+                    "on-error": "#ffffff",
+                    "on-tertiary-container": "#829685",
+                    "on-primary-container": "#8192a7",
+                    "tertiary": "#08190e",
+                    "surface-bright": "#fbf9f4",
+                    "surface-container": "#f0eee9",
+                    "primary-container": "#1a2b3c",
+                    "on-background": "#1b1c19",
+                    "on-primary": "#ffffff",
+                    "inverse-surface": "#30312e",
+                    "error-container": "#ffdad6",
+                    "primary-fixed-dim": "#b7c8de",
+                    "surface-tint": "#4f6073",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "surface-dim": "#dbdad5",
+                    "surface-container-low": "#f5f3ee",
+                    "primary": "#041627",
+                    "on-primary-fixed-variant": "#38485a",
+                    "secondary-fixed": "#ffdea5",
+                    "on-tertiary-fixed": "#0e1f13",
+                    "on-error-container": "#93000a",
+                    "inverse-primary": "#b7c8de",
+                    "surface": "#fbf9f4",
+                    "background": "#fbf9f4",
+                    "secondary-container": "#fed488",
+                    "tertiary-container": "#1c2e21",
+                    "surface-container-highest": "#e4e2dd",
+                    "on-secondary-fixed": "#261900",
+                    "secondary": "#775a19",
+                    "on-secondary-container": "#785a1a",
+                    "surface-container-lowest": "#ffffff",
+                    "outline-variant": "#c4c6cd"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "margin-desktop": "48px",
+                    "gutter": "24px",
+                    "margin-mobile": "16px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Montserrat"],
+                    "headline-xl": ["Montserrat"],
+                    "caption": ["Inter"],
+                    "headline-lg-mobile": ["Montserrat"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-lg": ["Montserrat"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        .ghaf-vein {
+            background-image: radial-gradient(circle at 2px 2px, rgba(197, 160, 89, 0.1) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s ease;
+        }
+
+        .accordion-item.active .accordion-content {
+            max-height: 500px;
+            padding-bottom: 24px;
+        }
+
+        .accordion-item.active .accordion-trigger .icon {
+            transform: rotate(180deg);
+        }
+
+        .custom-shadow {
+            box-shadow: 0px 4px 20px rgba(26, 43, 60, 0.05);
+        }
+
+        .gold-border-gradient {
+            border-left: 4px solid #c5a059;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body-md selection:bg-secondary-container">
+<!-- TopAppBar -->
+<nav class="bg-surface border-b border-outline-variant z-50 sticky top-0">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="forest">forest</span>
+<span class="font-headline-md text-headline-md font-bold text-primary tracking-tight">ETAXPLANNER PROPERTY CONNECT</span>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md" href="#">Explore</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md" href="#">Guide</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-label-md text-label-md" href="#">Portfolio</a>
+<a class="text-primary font-bold transition-colors font-label-md text-label-md" href="#">Support</a>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label-md text-label-md active:scale-95 transition-all">
+                    Book Consultation
+                </button>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<main class="min-h-screen">
+<!-- Hero Section -->
+<section class="relative pt-20 pb-32 overflow-hidden ghaf-vein">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="max-w-3xl">
+<span class="inline-block py-1 px-3 bg-secondary-container text-on-secondary-container rounded-full text-label-md font-label-md mb-6">Support & Insights</span>
+<h1 class="font-headline-xl text-headline-xl md:text-headline-xl text-primary mb-6 leading-tight">Frequently Asked Questions</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl">
+                        Navigating the Dubai real estate market requires clarity. We've compiled the most essential insights to help you understand the landscape of property investment.
+                    </p>
+</div>
+</div>
+<!-- Aesthetic Ghaf branch element -->
+<div class="absolute right-[-10%] top-0 opacity-10 pointer-events-none hidden lg:block">
+<span class="material-symbols-outlined text-[400px] text-secondary" data-icon="account_tree">account_tree</span>
+</div>
+</section>
+<!-- FAQ Accordion Section -->
+<section class="pb-32">
+<div class="max-w-[800px] mx-auto px-margin-mobile">
+<div class="space-y-4">
+<!-- Accordion Item 1 -->
+<div class="accordion-item group bg-surface-container-lowest rounded-xl custom-shadow border border-outline-variant/30 overflow-hidden transition-all duration-300">
+<button class="accordion-trigger w-full px-8 py-6 flex items-center justify-between text-left focus:outline-none" onclick="toggleAccordion(this)">
+<span class="font-headline-md text-headline-md text-primary pr-4">Is there any brokerage fee?</span>
+<span class="icon material-symbols-outlined text-secondary transition-transform duration-300" data-icon="expand_more">expand_more</span>
+</button>
+<div class="accordion-content px-8">
+<div class="pt-2 border-t border-outline-variant/20">
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                                    Qualified buyers may access developer-direct opportunities without buyer-side brokerage fees, subject to project terms. This transparent approach ensures you receive the maximum value from your investment without hidden administrative costs.
+                                </p>
+</div>
+</div>
+</div>
+<!-- Accordion Item 2 -->
+<div class="accordion-item group bg-surface-container-lowest rounded-xl custom-shadow border border-outline-variant/30 overflow-hidden transition-all duration-300">
+<button class="accordion-trigger w-full px-8 py-6 flex items-center justify-between text-left focus:outline-none" onclick="toggleAccordion(this)">
+<span class="font-headline-md text-headline-md text-primary pr-4">Can overseas investors purchase property in Dubai?</span>
+<span class="icon material-symbols-outlined text-secondary transition-transform duration-300" data-icon="expand_more">expand_more</span>
+</button>
+<div class="accordion-content px-8">
+<div class="pt-2 border-t border-outline-variant/20">
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                                    Yes, subject to applicable regulations and project eligibility. Dubai offers designated "Freehold" areas where foreign nationals can own property 100%. This is supported by a robust legal framework designed to protect international capital.
+                                </p>
+</div>
+</div>
+</div>
+<!-- Accordion Item 3 -->
+<div class="accordion-item group bg-surface-container-lowest rounded-xl custom-shadow border border-outline-variant/30 overflow-hidden transition-all duration-300">
+<button class="accordion-trigger w-full px-8 py-6 flex items-center justify-between text-left focus:outline-none" onclick="toggleAccordion(this)">
+<span class="font-headline-md text-headline-md text-primary pr-4">What is the minimum investment amount?</span>
+<span class="icon material-symbols-outlined text-secondary transition-transform duration-300" data-icon="expand_more">expand_more</span>
+</button>
+<div class="accordion-content px-8">
+<div class="pt-2 border-t border-outline-variant/20">
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                                    Investment requirements vary by project and developer. Entry-level luxury apartments may start from a different threshold than prime waterfront villas. Our team provides a tailored list of properties that align specifically with your fiscal strategy.
+                                </p>
+</div>
+</div>
+</div>
+<!-- Accordion Item 4 -->
+<div class="accordion-item group bg-surface-container-lowest rounded-xl custom-shadow border border-outline-variant/30 overflow-hidden transition-all duration-300">
+<button class="accordion-trigger w-full px-8 py-6 flex items-center justify-between text-left focus:outline-none" onclick="toggleAccordion(this)">
+<span class="font-headline-md text-headline-md text-primary pr-4">Are payment plans available?</span>
+<span class="icon material-symbols-outlined text-secondary transition-transform duration-300" data-icon="expand_more">expand_more</span>
+</button>
+<div class="accordion-content px-8">
+<div class="pt-2 border-t border-outline-variant/20">
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                                    Many developers offer flexible payment plans depending on the project. These often include "Post-Handover" options or "Construction Linked" plans, allowing you to manage liquidity effectively while your asset appreciates.
+                                </p>
+</div>
+</div>
+</div>
+<!-- Accordion Item 5 -->
+<div class="accordion-item group bg-surface-container-lowest rounded-xl custom-shadow border border-outline-variant/30 overflow-hidden transition-all duration-300">
+<button class="accordion-trigger w-full px-8 py-6 flex items-center justify-between text-left focus:outline-none" onclick="toggleAccordion(this)">
+<span class="font-headline-md text-headline-md text-primary pr-4">Can I purchase remotely?</span>
+<span class="icon material-symbols-outlined text-secondary transition-transform duration-300" data-icon="expand_more">expand_more</span>
+</button>
+<div class="accordion-content px-8">
+<div class="pt-2 border-t border-outline-variant/20">
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                                    Yes. Many transactions can be facilitated remotely through authorized channels and documentation. Through digital notarization and secure portal integration, we handle the logistics so you can invest from anywhere in the world.
+                                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-32">
+<div class="relative bg-primary rounded-2xl overflow-hidden py-16 px-8 md:px-20 text-center flex flex-col items-center">
+<!-- Background Decorative Layer -->
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<div class="w-full h-full" style="background-image: radial-gradient(#c5a059 1px, transparent 1px); background-size: 40px 40px;"></div>
+</div>
+<span class="material-symbols-outlined text-6xl text-secondary mb-6" data-icon="support_agent" style="font-variation-settings: 'FILL' 1">support_agent</span>
+<h2 class="font-headline-lg text-headline-lg text-on-primary mb-6 max-w-2xl">Need more specific investment advice?</h2>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim mb-10 max-w-xl">
+                    Our advisors provide bespoke strategies tailored to your wealth goals. Schedule a private consultation to discuss project-specific eligibility and ROI projections.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-label-md text-label-md hover:brightness-110 active:scale-95 transition-all flex items-center gap-2">
+                        Book a Private Consultation
+                        <span class="material-symbols-outlined text-lg" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<button class="border border-outline text-on-primary px-8 py-4 rounded-lg font-label-md text-label-md hover:bg-white/10 active:scale-95 transition-all">
+                        Download Investment Guide
+                    </button>
+</div>
+</div>
+</section>
+<!-- Property Highlight (Asymmetric/High-End Layout) -->
+<section class="py-24 bg-surface-container-low border-t border-outline-variant/30">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-5">
+<div class="relative">
+<div class="absolute -top-6 -left-6 w-32 h-32 border-t-2 border-l-2 border-secondary/30"></div>
+<img class="w-full aspect-[4/5] object-cover rounded-xl shadow-2xl relative z-10" data-alt="A luxurious modern high-rise penthouse in Dubai at sunset, with golden hour lighting reflecting off floor-to-ceiling glass windows. The architectural style is futuristic yet elegant, featuring clean white lines and lush balcony gardens. The background shows the iconic Dubai skyline in a soft, misty focus. The image conveys wealth, stability, and premium real estate exclusivity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBW1jGQGxP7d3wWIH8cb1kEPaqi8VEVkKRkChGunHB5IolUjEGbDUESOP7suCjJ1QuO60SyZ2oggU4r-mk3UaAQA3fePxHMxu-jQUk8_qqCRBwHFUf_nvBkA1YLYMenlXmPKwoEjgq0s3-rIL4hqJtazHc7Gag-T3OCOi2QEbpm9g3QHOMXBNebQicUoIne_GTIIZlIl9eXs4ZnI17x_DJW1MBgn4Ww-NmMdo35s8JEq_Vag5xnDYmX7GFk5uAxsUwvFfDh3hEx9Evv"/>
+<div class="absolute -bottom-10 -right-10 bg-white p-8 rounded-xl custom-shadow z-20 hidden md:block">
+<div class="flex items-center gap-4 mb-2">
+<span class="material-symbols-outlined text-secondary" data-icon="verified" style="font-variation-settings: 'FILL' 1">verified</span>
+<span class="font-label-md text-label-md text-primary">RERA Verified</span>
+</div>
+<p class="font-headline-md text-headline-md text-primary">High-Yield Assets</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 space-y-8">
+<h3 class="font-headline-lg text-headline-lg text-primary">Global Standards, Local Expertise</h3>
+<p class="text-body-lg font-body-lg text-on-surface-variant">
+                            Our portfolio selection focuses on the most resilient growth corridors of the UAE. We leverage deep market roots to identify properties that don't just exist, but thrive in the long term.
+                        </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="p-6 bg-white rounded-xl border border-outline-variant/50 gold-border-gradient">
+<span class="material-symbols-outlined text-secondary text-3xl mb-3" data-icon="account_balance">account_balance</span>
+<h4 class="font-bold text-primary mb-1">Stability</h4>
+<p class="text-caption font-caption text-on-surface-variant">Backed by government-regulated escrow accounts and RERA protection.</p>
+</div>
+<div class="p-6 bg-white rounded-xl border border-outline-variant/50 gold-border-gradient">
+<span class="material-symbols-outlined text-secondary text-3xl mb-3" data-icon="trending_up">trending_up</span>
+<h4 class="font-bold text-primary mb-1">Growth</h4>
+<p class="text-caption font-caption text-on-surface-variant">Consistent year-on-year capital appreciation in prime districts.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary py-12">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto gap-8">
+<div class="flex flex-col items-center md:items-start">
+<span class="font-headline-lg text-headline-lg text-on-primary mb-2">ETAXPLANNER PROPERTY CONNECT</span>
+<p class="text-primary-fixed-dim text-body-md font-body-md max-w-md text-center md:text-left">
+                    © 2024 ETAXPLANNER PROPERTY CONNECT. Registered with RERA. All rights reserved.
+                </p>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-primary-fixed-dim hover:text-secondary-fixed transition-colors font-body-md hover:underline" href="#">Investment Guide</a>
+<a class="text-primary-fixed-dim hover:text-secondary-fixed transition-colors font-body-md hover:underline" href="#">Market Insights</a>
+<a class="text-primary-fixed-dim hover:text-secondary-fixed transition-colors font-body-md hover:underline" href="#">Legal Framework</a>
+<a class="text-primary-fixed-dim hover:text-secondary-fixed transition-colors font-body-md hover:underline" href="#">RERA Verification</a>
+</div>
+</div>
+</footer>
+<!-- Bottom Navigation (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 flex justify-around items-center px-4 py-2 bg-surface-container shadow-lg rounded-t-xl">
+<a class="flex flex-col items-center justify-center text-on-surface-variant" href="#">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+<span class="font-label-md text-label-md">Explore</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant" href="#">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="font-label-md text-label-md">Guide</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant" href="#">
+<span class="material-symbols-outlined" data-icon="account_balance_wallet">account_balance_wallet</span>
+<span class="font-label-md text-label-md">Portfolio</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-4 py-1" href="#">
+<span class="material-symbols-outlined" data-icon="support_agent">support_agent</span>
+<span class="font-label-md text-label-md">Consult</span>
+</a>
+</nav>
+<script>
+        function toggleAccordion(button) {
+            const currentItem = button.parentElement;
+            const isActive = currentItem.classList.contains('active');
+            
+            // Close all items
+            document.querySelectorAll('.accordion-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // Open clicked item if it wasn't active
+            if (!isActive) {
+                currentItem.classList.add('active');
+            }
+        }
+
+        // Initialize first accordion item as open
+        document.addEventListener('DOMContentLoaded', () => {
+            const firstItem = document.querySelector('.accordion-item');
+            if(firstItem) {
+                firstItem.classList.add('active');
+            }
+        });
+    </script>
+</body></html>
