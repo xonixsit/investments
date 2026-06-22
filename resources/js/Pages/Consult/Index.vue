@@ -139,6 +139,31 @@
                 </select>
               </div>
 
+                <!-- Investment Objective -->
+                <div class="space-y-2">
+                  <label class="font-label-md text-on-surface-variant uppercase tracking-widest" style="font-size:12px;">Investment Objective</label>
+                                    <select v-model="form.investment_objective"
+                    class="w-full border-0 border-b border-outline-variant bg-transparent py-2 px-0 text-on-surface"
+                    style="outline:none; font-size:1rem;">
+                    <option>Rental Income</option>
+                    <option>Capital Appreciation</option>
+                    <option>Diversification</option>
+                    <option>Holiday Home</option>
+                    <option>Commercial Investment</option>
+                  </select>
+                  <p v-if="form.errors.investment_objective" class="field-error">{{ form.errors.investment_objective }}</p>
+                </div>
+                <div class="space-y-2">
+                  <label class="font-label-md text-on-surface-variant uppercase tracking-widest" style="font-size:12px;">Timeline to Invest</label>
+                  <input v-model="form.timeline_to_invest" type="text" placeholder="e.g., 12 months"
+                    class="w-full border-0 border-b bg-transparent py-2 px-0 text-on-surface transition-colors"
+                    :style="{ borderColor: form.errors.timeline_to_invest ? '#ba1a1a' : '' }"
+                    style="outline:none; font-size:1rem; border-bottom: 1px solid #c4c6cd;"
+                    @focus="e => e.target.style.borderColor='#041627'"
+                    @blur="e => e.target.style.borderColor= form.errors.timeline_to_invest ? '#ba1a1a' : ''" />
+                  <p v-if="form.errors.timeline_to_invest" class="field-error">{{ form.errors.timeline_to_invest }}</p>
+                </div>
+
               <!-- Budget Slider -->
               <div class="md:col-span-2 space-y-4">
                 <div class="flex justify-between items-center">
@@ -180,43 +205,7 @@
     </main>
 
     <!-- Footer -->
-   <!-- Footer -->
-    <footer class="w-full pt-20 pb-10 bg-primary border-t border-outline">
-      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter text-on-primary">
-        <div class="col-span-1">
-          <div class="flex items-center gap-3 mb-6">
-            <img :src="logoUrl" style="height:44px;width:auto;display:block;object-fit:contain;filter:brightness(0) invert(1);" alt="ETax Investments Dubai" class="h-10 w-auto" />
-          </div>
-          <p class="font-body-md opacity-70 max-w-xs">Invest in Dubai Properties with Direct Developer Pricing – No Buyer Brokerage.</p>
-        </div>
-        <div>
-          <h4 class="font-label-md uppercase tracking-widest mb-6 text-secondary-fixed">Quick Links</h4>
-          <ul class="space-y-4">
-            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="/investments">Investment Catalog</a></li>
-            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="/guide">Investor Guide</a></li>
-            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="/faqs">FAQs</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-label-md uppercase tracking-widest mb-6 text-secondary-fixed">Legal</h4>
-          <ul class="space-y-4">
-            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="#">Privacy Policy</a></li>
-            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="#">Terms of Service</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-label-md uppercase tracking-widest mb-6 text-secondary-fixed">Newsletter</h4>
-          <p class="font-caption opacity-60 mb-4">Stay updated with premium Dubai property launches.</p>
-          <div class="flex gap-2">
-            <input class="bg-primary-container border-none text-white font-caption px-4 py-2 w-full" placeholder="Email" type="email" />
-            <button class="bg-secondary text-on-secondary px-4 py-2 font-label-md">Join</button>
-          </div>
-        </div>
-      </div>
-      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-16 pt-8 border-t border-white/10 text-center">
-        <p class="font-body-md text-outline-variant">© 2024 ETAXPLANNER PROPERTY CONNECT. All rights reserved. Registered with RERA.</p>
-      </div>
-    </footer>
+    <Footer source="consult" />
 
   </div>
 </template>
@@ -224,13 +213,15 @@
 <script setup>
 import { ref, computed, watch } from 'vue';
 import { Link, useForm } from '@inertiajs/vue3';
-import logoUrl from '@images/etax_investments_dubai.png';
 import NavBar from '@/Components/NavBar.vue';
+import Footer from '@/Components/Footer.vue';
 
 const form = useForm({
     name: '', email: '', dial_code: '+971', phone: '',
     country: '', contact_method: 'WhatsApp',
     property_interest: 'Residential', budget_label: '', message: '',
+    investment_objective: '',
+    timeline_to_invest: '',
 });
 
 const budgetVal = ref(10);

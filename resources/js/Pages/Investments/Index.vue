@@ -239,7 +239,7 @@
             <h2 class="text-primary mb-4" style="font-family:'Montserrat',sans-serif; font-size:2rem; font-weight:600; letter-spacing:-0.01em;">Why Invest Through Us</h2>
             <p class="font-body-md text-on-surface-variant">We bridge the gap between global capital and Dubai's most resilient real estate assets through transparency and local expertise.</p>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
             <div class="flex flex-col items-center text-center p-8 hover:bg-surface-container-low transition-colors duration-300">
               <div class="w-20 h-20 bg-primary-container rounded-full flex items-center justify-center mb-6">
                 <span class="material-symbols-outlined text-secondary-fixed" style="font-size:2rem;">payments</span>
@@ -261,6 +261,13 @@
               <h3 class="font-headline-md text-primary mb-4" style="font-family:'Montserrat',sans-serif;">Verified Opportunities</h3>
               <p class="font-body-md text-on-surface-variant leading-relaxed">Every property in our catalog is rigorously vetted for legal compliance and financial stability.</p>
             </div>
+            <div class="flex flex-col items-center text-center p-8 hover:bg-surface-container-low transition-colors duration-300">
+              <div class="w-20 h-20 bg-primary-container rounded-full flex items-center justify-center mb-6">
+                <span class="material-symbols-outlined text-secondary-fixed" style="font-size:2rem;">support_agent</span>
+              </div>
+              <h3 class="font-headline-md text-primary mb-4" style="font-family:'Montserrat',sans-serif;">End-to-End Guidance</h3>
+              <p class="font-body-md text-on-surface-variant leading-relaxed">From inquiry to handover, our team supports you throughout the process.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -268,43 +275,7 @@
     </main>
 
     <!-- Footer -->
-   <!-- Footer -->
-    <footer class="w-full pt-20 pb-10 bg-primary border-t border-outline">
-      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter text-on-primary">
-        <div class="col-span-1">
-          <div class="flex items-center gap-3 mb-6">
-            <img :src="logoUrl" style="height:44px;width:auto;display:block;object-fit:contain;filter:brightness(0) invert(1);" alt="ETax Investments Dubai" class="h-10 w-auto" />
-          </div>
-          <p class="font-body-md opacity-70 max-w-xs">Invest in Dubai Properties with Direct Developer Pricing – No Buyer Brokerage.</p>
-        </div>
-        <div>
-          <h4 class="font-label-md uppercase tracking-widest mb-6 text-secondary-fixed">Quick Links</h4>
-          <ul class="space-y-4">
-            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="/investments">Investment Catalog</a></li>
-            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="/guide">Investor Guide</a></li>
-            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="/faqs">FAQs</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-label-md uppercase tracking-widest mb-6 text-secondary-fixed">Legal</h4>
-          <ul class="space-y-4">
-            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="#">Privacy Policy</a></li>
-            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="#">Terms of Service</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-label-md uppercase tracking-widest mb-6 text-secondary-fixed">Newsletter</h4>
-          <p class="font-caption opacity-60 mb-4">Stay updated with premium Dubai property launches.</p>
-          <div class="flex gap-2">
-            <input class="bg-primary-container border-none text-white font-caption px-4 py-2 w-full" placeholder="Email" type="email" />
-            <button class="bg-secondary text-on-secondary px-4 py-2 font-label-md">Join</button>
-          </div>
-        </div>
-      </div>
-      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-16 pt-8 border-t border-white/10 text-center">
-        <p class="font-body-md text-outline-variant">© 2024 ETAXPLANNER PROPERTY CONNECT. All rights reserved. Registered with RERA.</p>
-      </div>
-    </footer>
+    <Footer source="investments" />
 
     <!-- Mobile Bottom Nav -->
     <nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-16 bg-surface border-t border-outline-variant shadow-md md:hidden">
@@ -337,9 +308,9 @@
 
 <script setup>
 import { Link } from '@inertiajs/vue3';
-import logoUrl from '@images/etax_investments_dubai.png';
 import screenBg from '@images/screen.png';
 import NavBar from '@/Components/NavBar.vue';
+import Footer from '@/Components/Footer.vue';
 </script>
 
 <style scoped>

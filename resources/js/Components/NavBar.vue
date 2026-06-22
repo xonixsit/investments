@@ -4,7 +4,9 @@
 
       <!-- Logo -->
       <div class="flex items-center">
-        <Link href="/"><img :src="logoUrl" alt="ETax Investments Dubai" class="h-10 md:h-12 w-auto" /></Link>
+        <Link href="/">
+        <img src="/storage/images/etax_investments_dubai.png" alt="ETP Accounting Services" style="height:58px;width:auto;display:block;object-fit:contain;" />
+      </Link>
       </div>
 
       <!-- Desktop nav -->
@@ -17,8 +19,7 @@
       </nav>
 
       <!-- Desktop CTA -->
-      <Link href="/consult"
-        class="hidden md:block bg-secondary text-on-secondary px-6 py-3 font-label-md uppercase tracking-widest hover:opacity-90 transition-all cursor-pointer">
+      <Link href="/consult" class="hidden md:block bg-primary text-on-primary px-6 py-3 font-label-md text-label-md uppercase tracking-widest hover:translate-y-[-2px] transition-all shadow-card active:scale-95 text-center w-full sm:w-auto block">
         Book Consultation
       </Link>
 
@@ -44,9 +45,7 @@
         <Link href="/guide"       :class="mobileNavClass('/guide')"       @click="menuOpen=false">Guide</Link>
         <Link href="/faqs"        :class="mobileNavClass('/faqs')"        @click="menuOpen=false">FAQs</Link>
         <Link href="/contact"     :class="mobileNavClass('/contact')"     @click="menuOpen=false">Contact</Link>
-        <Link href="/consult"
-          class="mt-4 bg-secondary text-on-secondary text-center py-3 font-label-md uppercase tracking-widest"
-          @click="menuOpen=false">
+        <Link href="/consult" class="mt-4 bg-secondary text-on-secondary text-center py-3 font-label-md uppercase tracking-widest w-full" style="width:100%;display:block;" @click="menuOpen=false">
           Book Consultation
         </Link>
       </nav>

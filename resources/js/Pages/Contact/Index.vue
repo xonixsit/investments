@@ -139,32 +139,29 @@
                 <div class="flex gap-4">
                   <span class="material-symbols-outlined flex-shrink-0" style="color:#e9c176;">location_on</span>
                   <div>
-                    <p class="font-label-md uppercase tracking-widest mb-1" style="font-size:11px; color:#e9c176;">Address</p>
-                    <p style="font-size:0.9375rem; color:rgba(255,255,255,0.8);">Suite 1204, Platinum Tower<br/>Business Bay, Dubai, UAE</p>
+                      <p class="font-label-md uppercase tracking-widest mb-1" style="font-size:11px; color:#e9c176;">Address</p>
+                      <p style="font-size:0.9375rem; color:rgba(255,255,255,0.8);">6418 N Maplewood Ave<br/>Chicago, IL 60645, USA</p>
                   </div>
                 </div>
                 <div class="flex gap-4">
                   <span class="material-symbols-outlined flex-shrink-0" style="color:#e9c176;">call</span>
                   <div>
-                    <p class="font-label-md uppercase tracking-widest mb-1" style="font-size:11px; color:#e9c176;">Phone</p>
-                    <p style="font-size:0.9375rem; color:rgba(255,255,255,0.8);">+971 4 555 0123</p>
+                      <p class="font-label-md uppercase tracking-widest mb-1" style="font-size:11px; color:#e9c176;">Phone</p>
+                      <p style="font-size:0.9375rem; color:rgba(255,255,255,0.8);">+1 703-829-4357</p>
                   </div>
                 </div>
                 <div class="flex gap-4">
                   <span class="material-symbols-outlined flex-shrink-0" style="color:#e9c176;">mail</span>
                   <div>
-                    <p class="font-label-md uppercase tracking-widest mb-1" style="font-size:11px; color:#e9c176;">Email</p>
-                    <p style="font-size:0.9375rem; color:rgba(255,255,255,0.8);">invest@etaxplanner.ae</p>
+                      <p class="font-label-md uppercase tracking-widest mb-1" style="font-size:11px; color:#e9c176;">Email</p>
+                      <p style="font-size:0.9375rem; color:rgba(255,255,255,0.8);">Support@etaxplanner.com</p>
                   </div>
                 </div>
               </div>
               <div class="mt-10 pt-8 border-t" style="border-color:rgba(56,72,90,0.6);">
                 <p class="mb-3" style="font-size:12px; color:#8192a7;">Operating Hours</p>
                 <div class="flex justify-between" style="font-size:0.9375rem; color:rgba(255,255,255,0.8);">
-                  <span>Mon – Fri</span><span>09:00 – 18:00</span>
-                </div>
-                <div class="flex justify-between mt-1" style="font-size:0.9375rem; color:rgba(255,255,255,0.8);">
-                  <span>Saturday</span><span>10:00 – 14:00</span>
+                  <span>Mon – Sat</span><span>8:00 AM – 8:00 PM (EST)</span>
                 </div>
               </div>
             </div>
@@ -201,43 +198,7 @@
     </main>
 
     <!-- Footer -->
-   <!-- Footer -->
-    <footer class="w-full pt-20 pb-10 bg-primary border-t border-outline">
-      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter text-on-primary">
-        <div class="col-span-1">
-          <div class="flex items-center gap-3 mb-6">
-            <img :src="logoUrl" style="height:44px;width:auto;display:block;object-fit:contain;filter:brightness(0) invert(1);" alt="ETax Investments Dubai" class="h-10 w-auto" />
-          </div>
-          <p class="font-body-md opacity-70 max-w-xs">Invest in Dubai Properties with Direct Developer Pricing – No Buyer Brokerage.</p>
-        </div>
-        <div>
-          <h4 class="font-label-md uppercase tracking-widest mb-6 text-secondary-fixed">Quick Links</h4>
-          <ul class="space-y-4">
-            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="/investments">Investment Catalog</a></li>
-            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="/guide">Investor Guide</a></li>
-            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="/faqs">FAQs</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-label-md uppercase tracking-widest mb-6 text-secondary-fixed">Legal</h4>
-          <ul class="space-y-4">
-            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="#">Privacy Policy</a></li>
-            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="#">Terms of Service</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-label-md uppercase tracking-widest mb-6 text-secondary-fixed">Newsletter</h4>
-          <p class="font-caption opacity-60 mb-4">Stay updated with premium Dubai property launches.</p>
-          <div class="flex gap-2">
-            <input class="bg-primary-container border-none text-white font-caption px-4 py-2 w-full" placeholder="Email" type="email" />
-            <button class="bg-secondary text-on-secondary px-4 py-2 font-label-md">Join</button>
-          </div>
-        </div>
-      </div>
-      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-16 pt-8 border-t border-white/10 text-center">
-        <p class="font-body-md text-outline-variant">© 2024 ETAXPLANNER PROPERTY CONNECT. All rights reserved. Registered with RERA.</p>
-      </div>
-    </footer>
+    <Footer source="contact" />
 
     <!-- Mobile bottom nav -->
     <nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-16 bg-surface border-t border-outline-variant shadow-md md:hidden">
@@ -254,8 +215,8 @@
 import { ref, computed, watch } from 'vue';
 import { Link, useForm } from '@inertiajs/vue3';
 import NavBar from '@/Components/NavBar.vue';
-import logoUrl from '@images/etax_investments_dubai.png';
 import teamImage from '@images/screen_contact.png';
+import Footer from '@/Components/Footer.vue';
 
 const propertyTypes = ['Residential', 'Commercial', 'Off-Plan'];
 

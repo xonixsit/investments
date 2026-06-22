@@ -21,6 +21,8 @@ class ConsultationController extends Controller
             'country'          => 'nullable|string|max:100',
             'contact_method'   => 'required|string|max:30',
             'property_interest'=> 'required|string|max:50',
+            'investment_objective' => 'required|string|max:50',
+            'timeline_to_invest'   => 'required|string|max:50',
             'budget_label'     => 'nullable|string|max:50',
             'message'          => 'nullable|string|max:2000',
         ]);

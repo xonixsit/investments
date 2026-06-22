@@ -19,11 +19,11 @@
             <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 leading-relaxed max-w-lg" style="font-size: 1.125rem;">
               Direct access to premier developer pricing with <span class="font-bold text-primary">zero buyer brokerage fees</span>. Secured growth, permanent stability, and high-yield potential.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4">
-              <Link href="/consult" class="bg-primary text-on-primary px-10 py-4 font-label-md text-label-md uppercase tracking-widest hover:translate-y-[-2px] transition-all shadow-card active:scale-95 text-center">
+            <div class="flex flex-col sm:flex-row gap-4 items-center">
+              <Link href="/consult" class="bg-primary text-on-primary px-6 py-3 font-label-md text-label-md uppercase tracking-widest sm:hover:translate-y-[-2px] active:translate-y-[-2px] transition-all shadow-card active:scale-95 text-center w-full sm:w-auto block rounded-lg cursor-pointer">
                 Book a Consultation
               </Link>
-              <Link href="/investments" class="border border-primary text-primary px-10 py-4 font-label-md text-label-md uppercase tracking-widest hover:bg-primary/5 transition-all active:scale-95 text-center">
+              <Link href="/investments" class="border border-primary text-primary px-6 py-3 font-label-md text-label-md uppercase tracking-widest hover:bg-primary/5 transition-all active:scale-95 text-center w-full sm:w-auto block">
                 Explore Properties
               </Link>
             </div>
@@ -63,21 +63,21 @@
             </div>
             <!-- Benefit 4 -->
             <div class="bg-white p-10 border border-outline-variant hover:border-secondary transition-colors group">
-              <span class="material-symbols-outlined text-4xl text-secondary mb-6 block" data-icon="security">security</span>
-              <h3 class="font-headline-md text-headline-md text-primary mb-3">Safety &amp; Stability</h3>
-              <p class="text-on-surface-variant leading-relaxed">Consistently ranked as one of the safest cities globally with a pegged currency and political stability.</p>
+              <span class="material-symbols-outlined text-4xl text-secondary mb-6 block" data-icon="public">public</span>
+              <h3 class="font-headline-md text-headline-md text-primary mb-3">International Investor‑Friendly Market</h3>
+              <p class="text-on-surface-variant leading-relaxed">A regulatory environment that welcomes global investors with transparent laws and tax incentives.</p>
             </div>
             <!-- Benefit 5 -->
             <div class="bg-white p-10 border border-outline-variant hover:border-secondary transition-colors group">
-              <span class="material-symbols-outlined text-4xl text-secondary mb-6 block" data-icon="travel_explore">travel_explore</span>
-              <h3 class="font-headline-md text-headline-md text-primary mb-3">Strategic Location</h3>
-              <p class="text-on-surface-variant leading-relaxed">Located at the crossroads of East and West, with 2/3 of the world reachable within an 8-hour flight.</p>
+              <span class="material-symbols-outlined text-4xl text-secondary mb-6 block" data-icon="payment">payment</span>
+              <h3 class="font-headline-md text-headline-md text-primary mb-3">Flexible Payment Plans</h3>
+              <p class="text-on-surface-variant leading-relaxed">Choose from staged payments, mortgages, and developer‑backed financing tailored to your cash flow.</p>
             </div>
             <!-- Benefit 6 -->
             <div class="bg-white p-10 border border-outline-variant hover:border-secondary transition-colors group">
-              <span class="material-symbols-outlined text-4xl text-secondary mb-6 block" data-icon="verified_user">verified_user</span>
-              <h3 class="font-headline-md text-headline-md text-primary mb-3">Investor Visas</h3>
-              <p class="text-on-surface-variant leading-relaxed">Attractive Golden Visa programs for property investors, offering long-term residency for you and your family.</p>
+              <span class="material-symbols-outlined text-4xl text-secondary mb-6 block" data-icon="apartment">apartment</span>
+              <h3 class="font-headline-md text-headline-md text-primary mb-3">High‑Quality Developments</h3>
+              <p class="text-on-surface-variant leading-relaxed">World‑class projects built by renowned developers with premium finishes and cutting‑edge design.</p>
             </div>
           </div>
         </div>
@@ -199,12 +199,11 @@
               </div>
             </div>
             <div>
-              <span class="text-secondary font-label-md text-label-md tracking-widest uppercase block mb-4">About Us</span>
-              <h2 class="font-headline-lg text-primary mb-6" style="font-family:'Montserrat',sans-serif;">Connecting Qualified Investors to Dubai's Finest Assets</h2>
+              <span class="text-secondary font-label-md text-label-md tracking-widest uppercase block mb-4">ABOUT US</span>
+              <h2 class="font-headline-lg text-primary mb-6" style="font-family:'Montserrat',sans-serif;">Who We Are</h2>
               <div class="space-y-6 text-on-surface-variant font-body-md leading-relaxed">
-                <p>ETAXPLANNER PROPERTY CONNECT is more than a real estate agency. We are a specialized advisory bridge designed for high-net-worth individuals and corporate entities looking to diversify into the United Arab Emirates.</p>
-                <p>We believe in "Radical Transparency." By eliminating buyer brokerage fees and negotiating directly with top-tier developers like Emaar, Nakheel, and Damac, we ensure our clients start their investment journey with equity growth from day one.</p>
-                <p>Our mission is rooted in the UAE’s vision of sustainable prosperity—providing professional, resilient, and high-impact real estate solutions for the global citizen.</p>
+                <p>ETaxPlanner Investments is committed to connecting qualified investors with carefully selected Dubai property opportunities through trusted developer partnerships and professional guidance.</p>
+                <p>Our goal is to provide a seamless, transparent acquisition experience, leveraging our deep market expertise to secure assets that align with your long-term wealth strategy.</p>
               </div>
               <!-- <button class="mt-12 flex items-center gap-3 text-primary font-bold hover:text-secondary transition-colors group">
                 Learn more about our philosophy
@@ -223,65 +222,40 @@
             Receive a tailored investment catalog based on your financial goals and risk profile.
           </p>
           <div class="max-w-md mx-auto">
-            <form class="space-y-6">
-              <input class="w-full bg-transparent editorial-input py-4 px-2 font-body-md text-primary placeholder:text-outline" placeholder="Your corporate email address" type="email"/>
-              <button class="w-full bg-primary text-on-primary py-4 font-label-md text-label-md hover:bg-primary-container transition-all" type="submit">
-                Request Private Catalog
+            <form @submit.prevent="submitCatalog" class="space-y-6">
+              <input v-model="catalogForm.email" class="w-full bg-transparent editorial-input py-4 px-2 font-body-md text-primary placeholder:text-outline" placeholder="Your corporate email address" type="email" required />
+              <button class="w-full bg-primary text-on-primary py-4 font-label-md text-label-md hover:bg-primary-container transition-all" type="submit" :disabled="catalogForm.processing">
+                {{ catalogForm.processing ? 'Requesting...' : 'Request Private Catalog' }}
               </button>
+              <p v-if="catalogForm.errors.email" class="text-red-600 font-body-sm mt-2">{{ catalogForm.errors.email }}</p>
             </form>
           </div>
         </div>
       </section>
 
       <!-- Footer -->
-      <!-- Footer -->
-    <footer class="w-full pt-20 pb-10 bg-primary border-t border-outline">
-      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter text-on-primary">
-        <div class="col-span-1">
-          <div class="flex items-center gap-3 mb-6">
-            <img :src="logoUrl" style="height:44px;width:auto;display:block;object-fit:contain;filter:brightness(0) invert(1);" alt="ETax Investments Dubai" class="h-10 w-auto" />
-          </div>
-          <p class="font-body-md opacity-70 max-w-xs">Invest in Dubai Properties with Direct Developer Pricing – No Buyer Brokerage.</p>
-        </div>
-        <div>
-          <h4 class="font-label-md uppercase tracking-widest mb-6 text-secondary-fixed">Quick Links</h4>
-          <ul class="space-y-4">
-            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="/investments">Investment Catalog</a></li>
-            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="/guide">Investor Guide</a></li>
-            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="/faqs">FAQs</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-label-md uppercase tracking-widest mb-6 text-secondary-fixed">Legal</h4>
-          <ul class="space-y-4">
-            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="#">Privacy Policy</a></li>
-            <li><a class="font-body-md text-outline-variant hover:text-secondary-fixed-dim underline transition-all" href="#">Terms of Service</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-label-md uppercase tracking-widest mb-6 text-secondary-fixed">Newsletter</h4>
-          <p class="font-caption opacity-60 mb-4">Stay updated with premium Dubai property launches.</p>
-          <div class="flex gap-2">
-            <input class="bg-primary-container border-none text-white font-caption px-4 py-2 w-full" placeholder="Email" type="email" />
-            <button class="bg-secondary text-on-secondary px-4 py-2 font-label-md">Join</button>
-          </div>
-        </div>
-      </div>
-      <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-16 pt-8 border-t border-white/10 text-center">
-        <p class="font-body-md text-outline-variant">© 2024 ETAXPLANNER PROPERTY CONNECT. All rights reserved. Registered with RERA.</p>
-      </div>
-    </footer>
+      <Footer source="landing" />
     </main>
   </div>
 </template>
 
 <script setup>
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
-import { Link } from '@inertiajs/vue3';
-import logoUrl from '@images/etax_investments_dubai.png';
+import { Link, useForm } from '@inertiajs/vue3';
 import heroBg from '@images/etax_invest_bg.png';
 import teamImage from '@images/team_image.png';
 import NavBar from '@/Components/NavBar.vue';
+import Footer from '@/Components/Footer.vue';
+
+const catalogForm = useForm({
+  email: ''
+});
+
+const submitCatalog = () => {
+  catalogForm.post('/catalog-request', {
+    preserveScroll: true
+  });
+};
 
 // ROI Simulator
 const investment = ref(500000);
