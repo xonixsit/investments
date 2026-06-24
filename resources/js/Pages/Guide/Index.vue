@@ -189,10 +189,10 @@
     </nav>
 
     <!-- FAB -->
-    <button class="fixed bottom-24 right-6 md:bottom-12 md:right-12 bg-secondary text-on-secondary w-16 h-16 rounded-full flex items-center justify-center shadow-modal hover:scale-110 active:scale-95 transition-all z-40 group">
+    <!-- <button class="fixed bottom-24 right-6 md:bottom-12 md:right-12 bg-secondary text-on-secondary w-16 h-16 rounded-full flex items-center justify-center shadow-modal hover:scale-110 active:scale-95 transition-all z-40 group">
       <span class="material-symbols-outlined" style="font-size:1.75rem;">chat</span>
       <span class="absolute right-full mr-4 bg-primary text-on-primary px-4 py-2 text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity hidden md:block">Speak to an Advisor</span>
-    </button>
+    </button> -->
 
   </div>
 </template>

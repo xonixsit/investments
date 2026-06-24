@@ -20,7 +20,7 @@
               Direct access to premier developer pricing with <span class="font-bold text-primary">zero buyer brokerage fees</span>. Secured growth, permanent stability, and high-yield potential.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 items-center">
-              <Link href="/consult" class="bg-primary text-on-primary px-6 py-3 font-label-md text-label-md uppercase tracking-widest sm:hover:translate-y-[-2px] active:translate-y-[-2px] transition-all shadow-card active:scale-95 text-center w-full sm:w-auto block rounded-lg cursor-pointer">
+              <Link href="/consult" class="hidden md:inline-block bg-primary text-on-primary px-6 py-3 font-label-md text-label-md uppercase tracking-widest sm:hover:translate-y-[-2px] active:translate-y-[-2px] transition-all shadow-card active:scale-95 text-center sm:w-auto rounded-lg cursor-pointer">
                 Book a Consultation
               </Link>
               <Link href="/investments" class="border border-primary text-primary px-6 py-3 font-label-md text-label-md uppercase tracking-widest hover:bg-primary/5 transition-all active:scale-95 text-center w-full sm:w-auto block">
@@ -230,6 +230,8 @@
               <p v-if="catalogForm.errors.email" class="text-red-600 font-body-sm mt-2">{{ catalogForm.errors.email }}</p>
             </form>
           </div>
+
+    
         </div>
       </section>
 

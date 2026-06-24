@@ -112,6 +112,73 @@
         </div>
       </section>
 
+      <section class="py-16 md:py-24 bg-surface transition-all duration-700 ease-out">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-12">
+<span class="font-label-md text-secondary tracking-widest uppercase mb-2 block"> Investment Comparison</span>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Dubai vs Global Cities</h3>
+<p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">Why Dubai Leads the World's Premier Real Estate Markets</p>
+</div>
+<div class="overflow-x-auto hide-scrollbar soft-elevation border border-outline-variant rounded-sm">
+<table class="w-full text-left border-collapse min-w-[800px]">
+<thead>
+<tr class="bg-primary text-white">
+<th class="p-6 font-headline-md text-sm uppercase tracking-wider">Investment Metric</th>
+<th class="p-6 font-headline-md text-sm uppercase tracking-wider bg-secondary text-white">Dubai (UAE)</th>
+<th class="p-6 font-headline-md text-sm uppercase tracking-wider">London (UK)</th>
+<th class="p-6 font-headline-md text-sm uppercase tracking-wider">New York (USA)</th>
+</tr>
+</thead>
+<tbody class="bg-white">
+<tr class="border-b border-outline-variant">
+<td class="p-6 font-medium text-primary">Rental Yield</td>
+<td class="p-6 font-bold text-secondary bg-secondary-container/10">5–6%</td>
+<td class="p-6 text-on-surface-variant">2–4%</td>
+<td class="p-6 text-on-surface-variant">3–4%</td>
+</tr>
+<tr class="border-b border-outline-variant">
+<td class="p-6 font-medium text-primary">Price per sqft</td>
+<td class="p-6 font-bold text-secondary bg-secondary-container/10">$550–650</td>
+<td class="p-6 text-on-surface-variant">$1,100–1,500+</td>
+<td class="p-6 text-on-surface-variant">$1,500–2,500</td>
+</tr>
+<tr class="border-b border-outline-variant">
+<td class="p-6 font-medium text-primary">Income Tax on Rent</td>
+<td class="p-6 font-bold text-secondary bg-secondary-container/10">0%</td>
+<td class="p-6 text-on-surface-variant">Up to 45%</td>
+<td class="p-6 text-on-surface-variant">Up to 37%+</td>
+</tr>
+<tr class="border-b border-outline-variant">
+<td class="p-6 font-medium text-primary">Capital Gains Tax</td>
+<td class="p-6 font-bold text-secondary bg-secondary-container/10">0%</td>
+<td class="p-6 text-on-surface-variant">18–28%</td>
+<td class="p-6 text-on-surface-variant">15–20% + State</td>
+</tr>
+<tr class="border-b border-outline-variant">
+<td class="p-6 font-medium text-primary">Annual Property Tax</td>
+<td class="p-6 font-bold text-secondary bg-secondary-container/10">None</td>
+<td class="p-6 text-on-surface-variant">£2,000–5,000/yr</td>
+<td class="p-6 text-on-surface-variant">~1% of value/yr</td>
+</tr>
+<tr class="border-b border-outline-variant">
+<td class="p-6 font-medium text-primary">Foreign Ownership</td>
+<td class="p-6 font-bold text-secondary bg-secondary-container/10">100% Freehold</td>
+<td class="p-6 text-on-surface-variant">Complex</td>
+<td class="p-6 text-on-surface-variant">Complex</td>
+</tr>
+<tr>
+<td class="p-6 font-medium text-primary">Residency Pathway</td>
+<td class="p-6 font-bold text-secondary bg-secondary-container/10">Golden Visa (AED 2M+)</td>
+<td class="p-6 text-on-surface-variant">No Property Route</td>
+<td class="p-6 text-on-surface-variant">No Property Route</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="mt-6 text-caption text-outline text-center">*Data based on 2023-2024 market averages for prime residential districts.</p>
+</div>
+</section>
+
       <!-- Off-Plan Section -->
       <section class="py-16 md:py-24">
         <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
@@ -298,10 +365,10 @@
     </nav>
 
     <!-- FAB -->
-    <Link href="/consult" class="fixed bottom-24 right-6 md:bottom-12 md:right-12 bg-secondary text-on-secondary w-16 h-16 rounded-full flex items-center justify-center shadow-modal hover:scale-110 active:scale-95 transition-all z-40 group">
+    <!-- <Link href="/consult" class="fixed bottom-24 right-6 md:bottom-12 md:right-12 bg-secondary text-on-secondary w-16 h-16 rounded-full flex items-center justify-center shadow-modal hover:scale-110 active:scale-95 transition-all z-40 group">
       <span class="material-symbols-outlined" style="font-size:1.75rem;">chat</span>
       <span class="absolute right-full mr-4 bg-primary text-on-primary px-4 py-2 text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity hidden md:block">Speak to an Advisor</span>
-    </Link>
+    </Link> -->
 
   </div>
 </template>

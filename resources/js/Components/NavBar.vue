@@ -23,6 +23,7 @@
         Book Consultation
       </Link>
 
+
       <!-- Mobile hamburger -->
       <button @click="menuOpen = !menuOpen"
         class="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5"
@@ -45,9 +46,6 @@
         <Link href="/guide"       :class="mobileNavClass('/guide')"       @click="menuOpen=false">Guide</Link>
         <Link href="/faqs"        :class="mobileNavClass('/faqs')"        @click="menuOpen=false">FAQs</Link>
         <Link href="/contact"     :class="mobileNavClass('/contact')"     @click="menuOpen=false">Contact</Link>
-        <Link href="/consult" class="mt-4 bg-secondary text-on-secondary text-center py-3 font-label-md uppercase tracking-widest w-full" style="width:100%;display:block;" @click="menuOpen=false">
-          Book Consultation
-        </Link>
       </nav>
     </div>
   </header>
