@@ -20,8 +20,8 @@ class CatalogRequestController extends Controller
         $catalogRequest = CatalogRequest::create($validated);
 
         // Notify support & properties teams
-        Mail::to('Support@etaxplanner.com')
-            ->cc('properties@etaxplanner.com')
+        Mail::to('pro.investment@etaxplanner.com')
+            ->cc('pro.investment@etaxplanner.com')
             ->send(new CatalogRequestedAdminNotification($catalogRequest));
 
         // Confirmation to requestor

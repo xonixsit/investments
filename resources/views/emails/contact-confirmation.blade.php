@@ -20,6 +20,6 @@ p{color:#44474c;font-size:16px;line-height:1.6;margin:0 0 20px}
   </div>
   <a class="btn" href="{{ config('app.url') }}/investments">Explore Opportunities</a>
   <a class="btn" href="{{ config('app.url') }}/guide" style="background:#fbf9f4;color:#041627;border:1px solid #041627;">Investor Guide</a>
-  <p class="footer">ETAXPLANNER PROPERTY CONNECT &nbsp;·&nbsp; RERA #29482 &nbsp;·&nbsp; invest@etaxplanner.ae<br>Suite 1204, Platinum Tower, Business Bay, Dubai, UAE</p>
+  <p class="footer">ETAXPLANNER PROPERTY CONNECT &nbsp;·&nbsp; RERA #29482 &nbsp;·&nbsp; pro.investment@etaxplanner.com<br>Suite 1204, Platinum Tower, Business Bay, Dubai, UAE</p>
 </div>
 </body></html>

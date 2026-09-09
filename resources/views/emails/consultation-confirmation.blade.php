@@ -49,7 +49,7 @@ p { color:#44474c; font-size:16px; line-height:1.6; margin:0 0 24px; }
   <a class="btn" href="{{ config('app.url') }}/guide">Explore Investor Guide</a>
   <a class="btn-ghost" href="{{ config('app.url') }}/investments">Return to Opportunities</a>
 
-  <p class="footer">ETAXPLANNER PROPERTY CONNECT &nbsp;|&nbsp; RERA Registration #29482 &nbsp;|&nbsp; invest@etaxplanner.ae<br>
+  <p class="footer">ETAXPLANNER PROPERTY CONNECT &nbsp;|&nbsp; RERA Registration #29482 &nbsp;|&nbsp; pro.investment@etaxplanner.com<br>
   Level 12, Emirates Towers, Sheikh Zayed Road, Dubai, UAE</p>
 </div>
 </body>

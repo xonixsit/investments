@@ -24,8 +24,8 @@ class NewsletterController extends Controller
         $subscriber = NewsletterSubscriber::create($validated);
 
         // Notify support & properties teams
-        Mail::to('Support@etaxplanner.com')
-            ->cc('properties@etaxplanner.com')
+        Mail::to('pro.investment@etaxplanner.com')
+            ->cc('pro.investment@etaxplanner.com')
             ->send(new NewsletterSubscribedAdminNotification($subscriber));
 
         // Confirmation to subscriber

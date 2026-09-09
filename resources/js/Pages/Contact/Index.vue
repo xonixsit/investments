@@ -154,7 +154,7 @@
                   <span class="material-symbols-outlined flex-shrink-0" style="color:#e9c176;">mail</span>
                   <div>
                       <p class="font-label-md uppercase tracking-widest mb-1" style="font-size:11px; color:#e9c176;">Email</p>
-                      <p style="font-size:0.9375rem; color:rgba(255,255,255,0.8);">Support@etaxplanner.com</p>
+                      <p style="font-size:0.9375rem; color:rgba(255,255,255,0.8);">pro.investment@etaxplanner.com</p>
                   </div>
                 </div>
               </div>

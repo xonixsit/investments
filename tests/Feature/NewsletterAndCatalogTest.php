@@ -32,8 +32,8 @@ class NewsletterAndCatalogTest extends TestCase
 
         Mail::assertSent(NewsletterSubscribedAdminNotification::class, function ($mail) {
             return $mail->subscriber->email === 'test_newsletter@example.com' &&
-                   $mail->hasTo('Support@etaxplanner.com') &&
-                   $mail->hasCc('properties@etaxplanner.com');
+                   $mail->hasTo('pro.investment@etaxplanner.com') &&
+                   $mail->hasCc('pro.investment@etaxplanner.com');
         });
 
         Mail::assertSent(NewsletterSubscribedConfirmation::class, function ($mail) {
@@ -58,8 +58,8 @@ class NewsletterAndCatalogTest extends TestCase
 
         Mail::assertSent(CatalogRequestedAdminNotification::class, function ($mail) {
             return $mail->catalogRequest->email === 'test_catalog@example.com' &&
-                   $mail->hasTo('Support@etaxplanner.com') &&
-                   $mail->hasCc('properties@etaxplanner.com');
+                   $mail->hasTo('pro.investment@etaxplanner.com') &&
+                   $mail->hasCc('pro.investment@etaxplanner.com');
         });
 
         Mail::assertSent(CatalogRequestedConfirmation::class, function ($mail) {

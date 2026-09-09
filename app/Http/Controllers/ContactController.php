@@ -26,8 +26,8 @@ class ContactController extends Controller
 
         $inquiry = ContactInquiry::create($validated);
 
-        Mail::to('Support@etaxplanner.com')
-            ->cc('properties@etaxplanner.com')
+        Mail::to('pro.investment@etaxplanner.com')
+            ->cc('pro.investment@etaxplanner.com')
             ->send(new ContactNotification($inquiry));
 
         Mail::to($inquiry->email)

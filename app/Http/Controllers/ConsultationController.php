@@ -30,8 +30,8 @@ class ConsultationController extends Controller
         $consultation = Consultation::create($validated);
 
         // Notify support & properties teams
-        Mail::to('Support@etaxplanner.com')
-            ->cc('properties@etaxplanner.com')
+        Mail::to('pro.investment@etaxplanner.com')
+            ->cc('pro.investment@etaxplanner.com')
             ->send(new ConsultationNotification($consultation));
 
         // Confirmation to submitter
