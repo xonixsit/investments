@@ -1,6 +1,6 @@
 {
-  "_Footer-BEKUZsa7.js": {
-    "file": "assets/Footer-BEKUZsa7.js",
+  "_Footer-CGsBtvCw.js": {
+    "file": "assets/Footer-CGsBtvCw.js",
     "name": "Footer",
     "imports": [
       "resources/js/app.js"
@@ -14,7 +14,7 @@
     "name": "_plugin-vue_export-helper"
   },
   "resources/css/app.css": {
-    "file": "assets/app-BVXje5gv.css",
+    "file": "assets/app-B93eHlxp.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "name": "app",
@@ -51,73 +51,73 @@
     "src": "resources/images/team_image.png"
   },
   "resources/js/Pages/Catalog/Confirmation.vue": {
-    "file": "assets/Confirmation-BaDqHJqZ.js",
+    "file": "assets/Confirmation-I3D-iN-1.js",
     "name": "Confirmation",
     "src": "resources/js/Pages/Catalog/Confirmation.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Footer-BEKUZsa7.js"
+      "_Footer-CGsBtvCw.js"
     ]
   },
   "resources/js/Pages/Consult/Confirmation.vue": {
-    "file": "assets/Confirmation-Dvy7wri_.js",
+    "file": "assets/Confirmation-Lo1Lr3oa.js",
     "name": "Confirmation",
     "src": "resources/js/Pages/Consult/Confirmation.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Footer-BEKUZsa7.js"
+      "_Footer-CGsBtvCw.js"
     ]
   },
   "resources/js/Pages/Consult/Index.vue": {
-    "file": "assets/Index-DDjMlsrx.js",
+    "file": "assets/Index-BZypqcl6.js",
     "name": "Index",
     "src": "resources/js/Pages/Consult/Index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Footer-BEKUZsa7.js",
+      "_Footer-CGsBtvCw.js",
       "__plugin-vue_export-helper-DlAUqK2U.js"
     ],
     "css": [
-      "assets/Index-ChrgR88b.css"
+      "assets/Index-N3cD4scE.css"
     ]
   },
   "resources/js/Pages/Contact/Confirmation.vue": {
-    "file": "assets/Confirmation-DEGKDCr_.js",
+    "file": "assets/Confirmation-DkkkyeW4.js",
     "name": "Confirmation",
     "src": "resources/js/Pages/Contact/Confirmation.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Footer-BEKUZsa7.js"
+      "_Footer-CGsBtvCw.js"
     ]
   },
   "resources/js/Pages/Contact/Index.vue": {
-    "file": "assets/Index-BTztug_s.js",
+    "file": "assets/Index-BoBfpCrM.js",
     "name": "Index",
     "src": "resources/js/Pages/Contact/Index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Footer-BEKUZsa7.js",
+      "_Footer-CGsBtvCw.js",
       "__plugin-vue_export-helper-DlAUqK2U.js"
     ],
     "css": [
-      "assets/Index-C3iZUb54.css"
+      "assets/Index-D3eDZjej.css"
     ],
     "assets": [
       "assets/screen_contact-wWJp9LzN.png"
     ]
   },
   "resources/js/Pages/Disclaimer/Index.vue": {
-    "file": "assets/Index-DNJT6ZE-.js",
+    "file": "assets/Index-DTVk-5rQ.js",
     "name": "Index",
     "src": "resources/js/Pages/Disclaimer/Index.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_Footer-BEKUZsa7.js",
+      "_Footer-CGsBtvCw.js",
       "__plugin-vue_export-helper-DlAUqK2U.js",
       "resources/js/app.js"
     ],
@@ -126,23 +126,23 @@
     ]
   },
   "resources/js/Pages/Faqs/Index.vue": {
-    "file": "assets/Index-C9QEquOn.js",
+    "file": "assets/Index-CmDYFiKW.js",
     "name": "Index",
     "src": "resources/js/Pages/Faqs/Index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Footer-BEKUZsa7.js"
+      "_Footer-CGsBtvCw.js"
     ]
   },
   "resources/js/Pages/Guide/Index.vue": {
-    "file": "assets/Index-COo1uGsh.js",
+    "file": "assets/Index-NBxjEZLz.js",
     "name": "Index",
     "src": "resources/js/Pages/Guide/Index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Footer-BEKUZsa7.js",
+      "_Footer-CGsBtvCw.js",
       "__plugin-vue_export-helper-DlAUqK2U.js"
     ],
     "css": [
@@ -154,13 +154,13 @@
     ]
   },
   "resources/js/Pages/Investments/Index.vue": {
-    "file": "assets/Index-Dd6FM7hU.js",
+    "file": "assets/Index-sZFaJb5W.js",
     "name": "Index",
     "src": "resources/js/Pages/Investments/Index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Footer-BEKUZsa7.js",
+      "_Footer-CGsBtvCw.js",
       "__plugin-vue_export-helper-DlAUqK2U.js"
     ],
     "css": [
@@ -171,13 +171,13 @@
     ]
   },
   "resources/js/Pages/Landing/Index.vue": {
-    "file": "assets/Index-D13HJ9O3.js",
+    "file": "assets/Index-RLST8myd.js",
     "name": "Index",
     "src": "resources/js/Pages/Landing/Index.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.js",
-      "_Footer-BEKUZsa7.js",
+      "_Footer-CGsBtvCw.js",
       "__plugin-vue_export-helper-DlAUqK2U.js"
     ],
     "css": [
@@ -189,7 +189,7 @@
     ]
   },
   "resources/js/Pages/NotFound.vue": {
-    "file": "assets/NotFound-CfCmxfih.js",
+    "file": "assets/NotFound-Ban91vBs.js",
     "name": "NotFound",
     "src": "resources/js/Pages/NotFound.vue",
     "isDynamicEntry": true,
@@ -199,12 +199,12 @@
     ]
   },
   "resources/js/Pages/Privacy/Index.vue": {
-    "file": "assets/Index-BirwnbNm.js",
+    "file": "assets/Index-BxUU_q82.js",
     "name": "Index",
     "src": "resources/js/Pages/Privacy/Index.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_Footer-BEKUZsa7.js",
+      "_Footer-CGsBtvCw.js",
       "__plugin-vue_export-helper-DlAUqK2U.js",
       "resources/js/app.js"
     ],
@@ -213,12 +213,12 @@
     ]
   },
   "resources/js/Pages/Terms/Index.vue": {
-    "file": "assets/Index-Boz2jU9b.js",
+    "file": "assets/Index-Cj9BvVZo.js",
     "name": "Index",
     "src": "resources/js/Pages/Terms/Index.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_Footer-BEKUZsa7.js",
+      "_Footer-CGsBtvCw.js",
       "__plugin-vue_export-helper-DlAUqK2U.js",
       "resources/js/app.js"
     ],
@@ -227,7 +227,7 @@
     ]
   },
   "resources/js/app.js": {
-    "file": "assets/app-CHBa14XP.js",
+    "file": "assets/app-B9do0fQ4.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
