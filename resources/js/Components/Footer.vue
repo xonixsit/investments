@@ -49,7 +49,7 @@
       </div>
     </div>
     <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-16 pt-8 border-t border-white/10 text-center">
-      <p class="font-body-md text-outline-variant">© 2024 ETAXPLANNER PROPERTY CONNECT. All rights reserved. Registered with RERA.</p>
+      <p class="font-body-md text-outline-variant">© 2026 ETAXPLANNER PROPERTY CONNECT. All rights reserved. Registered with RERA.</p>
     </div>
   </footer>
 </template>

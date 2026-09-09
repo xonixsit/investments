@@ -130,7 +130,7 @@
 <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
 <!-- Hero Header -->
 <div class="mb-16 border-l-4 border-secondary pl-8">
-<p class="font-label-md text-label-md text-secondary uppercase tracking-widest mb-2">Effective Date: October 24, 2024</p>
+<p class="font-label-md text-label-md text-secondary uppercase tracking-widest mb-2">Effective Date: September 1st, 2026</p>
 <h2 class="font-headline-xl text-headline-xl text-primary max-w-3xl">Terms of Service</h2>
 <p class="font-body-lg text-body-lg text-on-surface-variant mt-4 max-w-2xl leading-relaxed">
                     Governance and operational guidelines for ETAXPLANNER PROPERTY CONNECT, Dubai's premier institutional real estate investment gateway.
