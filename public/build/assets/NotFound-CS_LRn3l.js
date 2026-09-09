@@ -1,0 +1,1 @@
+import{_ as t}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{c as o,b as r,o as s}from"./app-CIf5fZ7L.js";const n={},c={class:"flex items-center justify-center min-h-screen bg-gray-100"};function a(f,e){return s(),o("div",c,[...e[0]||(e[0]=[r("h1",{class:"text-2xl font-bold text-primary"},"Page Not Found",-1)])])}const l=t(n,[["render",a]]);export{l as default};

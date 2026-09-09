@@ -168,9 +168,9 @@
           <div class="mt-12 p-8 text-center" style="background-color:#1a2b3c; border-radius:0.75rem;">
             <h4 class="text-white mb-3" style="font-family:'Montserrat',sans-serif; font-size:1.5rem; font-weight:600;">Still have questions?</h4>
             <p class="mb-6" style="color:#8192a7; font-size:1rem;">Our senior advisors are available for a detailed walkthrough of the legal and financial frameworks.</p>
-            <button class="bg-secondary text-on-secondary px-10 py-3 font-label-md uppercase tracking-widest hover:opacity-90 transition-all active:scale-95">
+            <Link href="/consult" class="bg-secondary text-on-secondary px-10 py-3 font-label-md uppercase tracking-widest hover:opacity-90 transition-all active:scale-95 inline-block">
               Talk to an Expert
-            </button>
+            </Link>
           </div>
         </div>
       </section>
