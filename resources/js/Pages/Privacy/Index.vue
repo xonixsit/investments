@@ -80,11 +80,15 @@
               <li><strong>Portability:</strong> Receive your data in a commonly used electronic format.</li>
             </ul>
             <p class="font-body-lg text-on-surface-variant mt-4">
-              To exercise any of these rights, please contact our Compliance Officer via the button below.
+              To exercise any of these rights, please contact our Compliance Officer at:
             </p>
-            <button class="mt-4 w-full bg-secondary text-white font-label-md py-3 rounded-lg hover:brightness-110 transition-all">
-              Contact Compliance Officer
-            </button>
+            <div class="mt-4 p-6 bg-secondary-container/10 border-l-4 border-secondary rounded-lg">
+              <p class="font-label-md uppercase tracking-widest text-secondary text-xs mb-2">Compliance Officer</p>
+              <a href="mailto:pro.investment@etaxplanner.com" class="text-primary font-semibold text-lg hover:text-secondary transition-colors flex items-center gap-2">
+                <span class="material-symbols-outlined">mail</span>
+                pro.investment@etaxplanner.com
+              </a>
+            </div>
           </section>
         </div>
       </div>
